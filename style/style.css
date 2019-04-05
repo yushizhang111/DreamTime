@@ -1,0 +1,350 @@
+html, body { height: 100%; }
+body {
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+    width:100%;
+}
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+.notice-board>img{
+    z-index: 2;
+    width: 180px;
+    left: 83%;
+    position: absolute;
+    top: 12%;
+    
+}
+.notice-board>.notice-board-content{
+    z-index: 3;
+    width: 180px;
+    left: 84%;
+    position: absolute;
+    top: 13%;
+    
+}
+.notice-board>.notice-board-content>h5{
+    font-size:1em;
+    color:#8e5407;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+.notice-board>.notice-board-content>h5{
+    font-size:1em;
+    color:#8e5407;
+    font-family: 'Gloria Hallelujah', cursive;
+    visibility: visible;
+}
+.notice-board>.notice-board-content>h3{
+    font-size:0.8em;
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+    top: 80px;
+    position: relative;
+}
+.notice-board>.notice-board-content>p{
+    visibility: hidden;
+    color:#8e5407;
+    font-size:0.8em;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+.notice-board:hover>.notice-board-content>h3{
+    visibility: hidden;
+    
+}
+.notice-board:hover>.notice-board-content>p{
+    visibility: visible;
+}
+
+nav {
+    height: 55px;
+    border-bottom: 1px solid rgba(87, 92, 98, .8);
+    width: 100%;
+    color: #4286f4;
+    background:white;
+    overflow: hidden;
+    font-family:'Gloria Hallelujah', cursive;
+    font-size: 1.3em;
+    transition: .5s;
+    box-sizing: border-box;
+  }
+  
+  .nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 51px;
+  }
+  
+  .height-auto {
+    height: auto;
+    transition: 1s;
+  }
+  
+  .height-fixed {
+    height: auto;
+  }
+  
+  #list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #list a {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  
+  #hamburger {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  
+  #logo {
+    line-height: 55px;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 1.7em;
+    font-family: 'Mystery Quest', cursive;
+  }
+  
+  @media (min-width: 800px) {
+    #hamburger {
+      display: none;
+    }
+    #list {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .height-fixed {
+      height: 51px;
+    }
+    #list a {
+      margin-bottom: 0;
+      margin-right: 10px;
+      margin-left: 45px;
+      font-weight: 600;
+    }
+    nav {
+      background: white;
+      display: flex;
+      color: #4286f4;
+      padding-left: 10px;
+    }
+  }
+
+a {
+    color: #4286f4;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: orange;
+}
+
+a.active-page {
+    border-bottom: 3px solid red;
+}
+.achievement-overlay{
+    position: absolute;;
+    width:0;
+    top:0px;
+    height:100%;
+    background-color:rgba(225,225,225,0.5);
+    z-index: 3; 
+    transition: .5s ease;
+}
+
+#achievement-hide-button{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+}
+/* The source was adapted from the code on https://codepen.io/tiffachoo/pen/JveaJZ*/
+@keyframes floaty {
+	0%, 100% { transform: translateY(0) }
+	50% { transform: translateY(1rem) }
+}
+.floating_island{
+    
+	animation-name: floaty;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    width:225%;
+    
+}
+
+.island {
+    position: absolute;
+    top:30%; left:35%;
+    width:300px; height:120px;
+    margin: -60px 0 0 -150px;
+    perspective: 800px;
+    transform: scale(1.1)
+}
+
+
+/* The source was adapted from the code on https://codepen.io/adamjacob/pen/yNmMxX*/
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.water {
+    position: absolute;
+    background-color:rgba(0, 247, 255, 0.87);
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+
+
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+    top: 300%;
+    left: -200%;
+    border: 1px solid transparent;
+    border-radius: 35%;
+     
+ animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.water_1 {
+    position: absolute;
+    background-color:#36d0eb;
+    opacity: 0.5;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+
+
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+    top: 300%;
+    left: -400%;
+    border: 1px solid transparent;
+    border-radius: 40%;
+     
+animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+.water_2 {
+    position: absolute;
+    background-color:#0ebef3;
+    opacity: 0.5;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+
+
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+    top: 350%;
+    left: -550%;
+    border: 1px solid transparent;
+    border-radius: 40%;
+     
+animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+.water_3 {
+    position: absolute;
+    background-color:#02cefc;
+    z-index: -2;
+    width: 800px;
+    height: 800px;
+
+
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+    top: 150%;
+    left: -400%;
+    border: 1px solid transparent;
+    border-radius: 40%;
+     
+animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  em,#filter-count {
+      color: white;
+  }
+
+  .reward-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .reward-container >div {
+      margin: 20px;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+form input[type=text] {
+    padding: 10px;
+    margin-top: 1em;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form button:hover {
+    background: #0b7dda;
+}
+
+form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+ 

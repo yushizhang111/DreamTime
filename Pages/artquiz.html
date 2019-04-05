@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Art Quiz</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mystery+Quest" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/history.css" />
+	<link rel="stylesheet" href="../style/swiper.min.css">
+    <link rel="stylesheet" href="../style/school.css">
+    
+</head>
+<body>
+	<nav style="z-index: 1;">
+		<div class="nav-cont">
+			<a id="logo" href="../index.html">Dreamtime</a>
+			<img src="../images/redburger.png" id="hamburger" style="cursor:pointer">
+		</div>
+		<div id="list">
+				<a id="about" class="nav-buttons" href="History.html">History</a>
+				<a class="nav-buttons" href="school.html">School</a>
+				<a class="nav-buttons" href="Art.html">Art</a>
+				<a class="nav-buttons" href="Dictionary.html">Dictionary</a>
+				<a class="active-page" href="quizzes.html">Quiz</a>
+			</div>
+    </nav>
+    <div class="test">
+    <div id="artquiz"></div>
+					<button class="btn btn-outline-primary" type="button" id="artsubmit">Get Results</button>
+					<a href="quizzes.html"><button class="btn btn-outline-primary" type="button">Back to Quizzes</button></a>
+          <div id="artresults" style="color:white"></div>
+    </div>
+    <div class="achievement-overlay" >
+			<div class="achievement-picture row" style="position:relative; top:30%;width:1000px;left:-1200px;transition: .5s ease">
+			  <div class="col-sm-2">
+				<img class="reward-1" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+			  </div>
+			  <div class="col-sm-2">
+				<img class="reward-2" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+			  </div>
+			  <div class="col-sm-2">
+				<img class="reward-3" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+			  </div>
+			  <div class="col-sm-2">
+				<img class="reward-4" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+			  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="../js/allpass.js"></script>
+<script src="../js/artquiz.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/script2.js"></script>
+<script src="../js/bodyschool.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>
+

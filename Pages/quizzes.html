@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>School</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="../style/swiper.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mystery+Quest" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
+	<link rel="stylesheet" href="../style/school.css">
+	<script src="../js/responsivevoice.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="../style/history.css" />
+</head>
+
+<body>
+	<nav>
+		<div class="nav-cont">
+			<a id="logo" href="../index.html">Dreamtime</a>
+			<img src="../images/redburger.png" id="hamburger" style="cursor:pointer">
+		</div>
+		<div id="list">
+			<a id="about" class="nav-buttons" href="History.html">History</a>
+			<a class="nav-buttons" href="school.html">School</a>
+			<a class="nav-buttons" href="Art.html">Art</a>
+			<a class="nav-buttons" href="Dictionary.html">Dictionary</a>
+			<a class="active-page" href="quizzes.html">Quiz</a>
+		</div>
+	</nav>
+
+	<div class="school-container">
+		<a href="artquiz.html"><button class="btn-1">Art Quiz</button></a>
+		<a href="histquiz.html"><button class="btn-1">Histories Quiz</button></a>
+		<a href="bodyquiz.html"><button class="btn-1">Language Quiz</button></a>
+		<button type="button" class="btn-1" id="achievement-button" onclick="showAchievement()">Prize collected</button>
+  </div>
+
+  
+
+  <div class="achievement-overlay" >
+	<div class="achievement-picture row" style="position: relative; top:30%;left:-1200px;transition: .5s ease">
+		<div class="reward-container">
+			<div>
+				<h3 style="color:white;text-align: center;">Puzzle collected for<br>Language Quiz</h3>
+				<img class="reward-1" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+				<p>
+					<button type="button" class="btn btn-outline-primary" style="background: rgb(15, 114, 226);color: white;margin-left:16px;margin-top:5px;"><a href="../Pages/bodyquiz.html" style="color: white">Back to Language Quiz</a></button>
+				</p>
+			</div>
+			<div>
+				<h3 style="color:white;text-align: center;">Puzzle collected for<br>History Quiz</h3>
+				<img class="reward-2" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+				<p>
+					<button type="button" class="btn btn-outline-primary" style="background: rgb(15, 114, 226);color: white;margin-left:13px;margin-top:5px;"><a href="../Pages/histquiz.html" style="color: white">Back to History Quiz</a></button>
+				</p>
+			</div>
+			<div>
+				<h3 style="color:white;text-align: center;">Puzzle collected for<br>Art Quiz</h3>
+				<img class="reward-3" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+				<p>
+					<button type="button" class="btn btn-outline-primary" style="background: rgb(15, 114, 226);color: white;margin-left:30px;margin-top:5px;"><a href="../Pages/artquiz.html" style="color: white">Back to Art Quiz</a></button>
+				</p>
+			</div>
+			<div>
+				<h3 style="color:white;text-align: center;">Final Prize<br>'TA-DA'</h3>
+				<img class="reward-4" src="../images/board.jpg" style="width:200px;height:200px;transition: .5s ease">
+				<p>
+					<button type="button" class="btn btn-outline-primary" onclick="resetQuiz()" style="background: rgb(15, 114, 226);color: white;margin-left:2px;margin-top:5px;">Reset achievement</button>
+				</p>
+			</div>
+		</div>
+	</div>"
+	<button type="button" class="btn btn-outline-primary" id="achievement-hide-button" onclick="hideAchievement()" style="background: rgb(15, 114, 226);color: white">Close</button>
+</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/script2.js"></script>
+	<script src="../js/bodyschool.js"></script>
+	
+
+</body>
+
+</html>
